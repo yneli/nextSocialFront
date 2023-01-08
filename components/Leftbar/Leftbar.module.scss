@@ -1,0 +1,11 @@
+.leftbar {
+    // border-left: 1px solid #bdc1c6;
+    min-height: 100%;
+    width: 25%;
+    position: relative;
+}
+.item {
+    position: sticky;
+    top: 0;
+    padding: 30px;
+}
