@@ -1,0 +1,23 @@
+.search{
+    display: flex;
+    align-items: baseline;
+    
+
+    .input {
+        background-color: rgb(32, 35, 39);
+        padding: 6px 0px 6px 0px;
+        border-radius: 0px 33px 33px 0px;
+        border: 1px solid rgb(32, 35, 39);
+        :active {
+            background-color: red;
+        }
+ 
+    };
+    .img {
+        border-radius: 33px 0px 0px 33px;
+        padding: 7px 8px 7px 8px;
+        background-color: rgb(32, 35, 39);
+        align-items: center;
+    }
+}
+

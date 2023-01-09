@@ -1,13 +1,14 @@
 import React from "react";
-export const ReactLogo = React.memo(function ReactLogo()  {
-    const [ color, setColor ] = React.useState("black");
+import { useAppSelector } from "../../redux/hook";
+export const ReactLogo = React.memo(function ReactLogo({ blackThema }:{blackThema?:string})  {
+    const [ color, setColor ] = React.useState("");
     const randomColor = () => {
         let colors = ["#52F38A", "#EC1515", "#EC15EC"];
         let random = Math.floor(Math.random() *3);
         return setColor(colors[random]);
     };
     return <>
-      <svg onClick={randomColor} fill={color} height="33x" width="33px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 368.731 368.731" >
+      <svg onClick={randomColor} fill={color.length > 0? color : blackThema} height="33x" width="33px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 368.731 368.731" >
 <path d="M350.408,347.662c-5.977-12.874-82.32-123.065-95.902-142.635c8.208,3.409,30.104,12.663,36.307,16.888
 	c3.597,2.449,4.396,2.654,4.905,2.654c0.485,0,0.897-0.265,1.074-0.691c0.197-0.478,0.443-1.071-2.361-3.875l-11.006-12.594
 	c6.409,3.209,17.896,9.084,22.56,12.24c0.152,0.103,0.39,0.239,0.7,0.239l0.664-0.013l0.268-0.582

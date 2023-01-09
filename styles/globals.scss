@@ -7,6 +7,17 @@
   /* Global Font */
   font-family: 'Montserrat';
 }
+a, ins {
+	text-decoration: none;
+  color: inherit;
+
+  ;
+  a.text {
+    text-decoration: none;
+    color: #666;
+  }
+	}
+
 
 /* Remove default margin */
 body,
@@ -39,7 +50,6 @@ body {
   line-height: 1.5;
   font-family: 'Montserrat', sans-serif;
   background-color: white;
-
 }
 
 /* A elements that don't have a class get default styles */

@@ -3,7 +3,7 @@ import { ReactNode } from "react";
 import { Header } from "../Header";
 import { Sidebar } from "../SIdebar";
 import { Container } from "@mui/material";
-import { Leftbar } from "../Leftbar/Leftbar";
+import { Rightbar } from "../Leftbar/Rightbar";
 import { ThemaSwitch } from "../ThemaSwitch";
 import React from "react";
 import { useAppDispatch, useAppSelector } from "../../redux/hook";
@@ -16,13 +16,12 @@ export const Layout = ({ children }: { children?: ReactNode, header?: ReactNode 
   React.useEffect(() => {
     dispatch(whatIsThema());
   }, []);
-
   if(thema === true){
     document.body.style.background = 'white';
-    document.body.style.color = 'black'
+    document.body.style.color = 'black';
   }if(thema === false) {
-    document.body.style.background = 'black'
-    document.body.style.color = 'white'
+    document.body.style.background = 'black';
+    document.body.style.color = 'white';
   };
   
   return <>
@@ -31,7 +30,7 @@ export const Layout = ({ children }: { children?: ReactNode, header?: ReactNode 
     <div className={style.container}>
       <Sidebar/>
       {children}
-      <Leftbar/>
+      <Rightbar/>
       <ThemaSwitch/>
     </div>
     </Container>

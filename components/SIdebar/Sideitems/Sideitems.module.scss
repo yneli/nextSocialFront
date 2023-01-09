@@ -1,11 +1,18 @@
 .imgReact {
     color: aqua;
 }
-
 .sidebarItem {
     display: flex;
     align-items: center;
     gap: 20px;
-    cursor: pointer;
-   
+    cursor: pointer;  
+}
+.active {
+    background-color: rgb(179, 116, 116);
+    border-radius: 30px;
+    padding: 6px 0px 6px 10px;
+}
+
+.title {
+    margin: 0px
 }

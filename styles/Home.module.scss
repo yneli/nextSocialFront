@@ -1,15 +1,8 @@
 .container {
-  
-  // min-height: 100vh;
-  min-height: 2000px;
-  border: 1px solid #bdc1c6;
-  width: 50%;
-  .image {
-    color: black;
-  }
-}
-
-.image {
-  color: black;
-}
+  min-height: 100vh;
+  max-width: 600px;
+  border-left: 1px solid rgb(47, 51, 54);
+    border-right: 1px solid rgb(47, 51, 54);
+  flex: 1 1 auto;
+};
 
