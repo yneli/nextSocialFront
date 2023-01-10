@@ -1,0 +1,15 @@
+.leftbar {
+    display: flex;
+    min-height: 100%;
+    position: relative;
+    flex: 1 1 auto;
+    max-width: 300px;
+    margin-right: 40px;
+    padding-top: 30px;
+}
+.item {
+    position: sticky;
+    top: 0;
+    
+    
+}

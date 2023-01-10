@@ -3,7 +3,7 @@ import { ReactNode } from "react";
 import { Header } from "../Header";
 import { Sidebar } from "../SIdebar";
 import { Container } from "@mui/material";
-import { Rightbar } from "../Leftbar/Rightbar";
+import { Rightbar } from "../Rightbar/Rightbar";
 import { ThemaSwitch } from "../ThemaSwitch";
 import React from "react";
 import { useAppDispatch, useAppSelector } from "../../redux/hook";
