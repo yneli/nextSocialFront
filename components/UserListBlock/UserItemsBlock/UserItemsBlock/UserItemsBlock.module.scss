@@ -1,0 +1,38 @@
+.useritemsblock {
+    height: 80px;
+    background-color: rgb(32, 35, 39);
+    display: flex;
+    align-items: center;
+    position: relative;
+    .img {
+        border-radius: 4px;
+    }
+    .items {
+        padding-left: 15px;
+        display: flex;
+    }
+    .name {
+        display: flex;
+        padding-left: 18px;
+        gap: 6px;
+    }
+};
+
+.title {
+    font-size: 15px;
+}
+.heshTag {
+    font-size: 15px;
+    color: gray;
+}
+
+.active::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 3px;
+    background: rgb(29, 155, 240);
+    border-radius: 5px;
+}

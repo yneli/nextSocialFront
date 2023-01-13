@@ -6,7 +6,6 @@ import { useAppSelector } from "../../redux/hook";
 import React from "react";
 import { useRouter } from "next/router";
 
-
 export const Sidebar = () => {
   const thema = useAppSelector((state) => state.thema.themaDarkStatus);
   const router = useRouter();

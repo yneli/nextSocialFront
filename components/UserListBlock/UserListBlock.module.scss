@@ -4,9 +4,11 @@
     min-height: 100vh;
     flex: 1 1 auto;
     max-width: 350px;
-    padding: 15px;
     display: flex;
     flex-direction: column;
+    .header {
+        padding: 15px;
+    }
     .title {
         display: flex;
         justify-content: space-between;

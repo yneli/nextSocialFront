@@ -3,6 +3,7 @@ import style from "./UserListBlock.module.scss";
 import { DropDown } from "../DropDown/DropDown";
 import { Loading } from "../Loading/Loading";
 import SettingsIcon from '@mui/icons-material/Settings';
+import { UserItemsBlock } from "./UserItemsBlock/UserItemsBlock/UserItemsBlock";
 export const UserListBlock = () => {
     const [ visible, setVisible ] = React.useState(false);
     const [ inputText, setInputText ] =React.useState("");
@@ -20,8 +21,10 @@ export const UserListBlock = () => {
         document.body.addEventListener("click", handleOutSideClick)
     }, []);
     
+    
     return <>
       <div className={style.userlistblock}>
+        <div className={style.header}>
         <div className={style.title}><h3>Messages</h3>
         <div className={style.icons}>
             <SettingsIcon/>
@@ -34,7 +37,10 @@ export const UserListBlock = () => {
             <input onChange={(e) => setInputText(e.target.value)} onClick={visibleHandler} placeholder="Try searching for people, groups" className={style.input} type="text" />
             {visible? <DropDown>{inputText? `No results for:"${inputText}"`: <Loading></Loading>}</DropDown> : ''}
         </div>
-        <div className={style.items}></div>
+        </div>
+        <div className={style.items}>
+          <UserItemsBlock></UserItemsBlock>
+        </div>
       </div>
     </>
 }
