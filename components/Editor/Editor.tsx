@@ -7,7 +7,6 @@ import AddReactionIcon from '@mui/icons-material/AddReaction';
 import ImageIcon from '@mui/icons-material/Image';
 import GifBoxIcon from '@mui/icons-material/GifBox';
 import AddLocationAltIcon from '@mui/icons-material/AddLocationAlt';
-import { BtnBlue } from "../BtnBlue/BtnBlue";
 
 export const Editor = () => {
     const [ input, setInput ] = React.useState("");

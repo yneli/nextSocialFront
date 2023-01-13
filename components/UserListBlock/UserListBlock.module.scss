@@ -7,14 +7,23 @@
     padding: 15px;
     display: flex;
     flex-direction: column;
+    .title {
+        display: flex;
+        justify-content: space-between;
+        .icons {
+            padding-top: 2px;
+            cursor: pointer;
+        }
+    }
 };
 .search {
-    padding-top: 15px;
+    padding-top: 25px;
     position: relative;
     .svg {
         position: absolute;
-        top: 25px;
+        top: 37px;
         left: 15px;
+        cursor: pointer;
     }
 }
 

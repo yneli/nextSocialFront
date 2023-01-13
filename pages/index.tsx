@@ -21,7 +21,7 @@ export default function Home() {
           </div>
         </div>
         <div className={style.btn}>
-          <BtnBlue>Tweet</BtnBlue>
+          <BtnBlue>chirp</BtnBlue>
         </div>
       </div>
       <div className={style.content}>
