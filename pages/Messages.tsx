@@ -1,6 +1,10 @@
+import { UserListBlock } from "../components/UserListBlock/UserListBlock";
 import style from "./../styles/Messages.module.scss";
 export default function Messages() {
-    return <div className={style.container}>
-    <h3>Home</h3>
+    return <>
+    <UserListBlock></UserListBlock>
+    <div className={style.container}>
+      <div className={style.header}></div>
   </div>
+  </>
 }

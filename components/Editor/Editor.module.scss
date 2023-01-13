@@ -1,0 +1,40 @@
+
+.editor{
+    padding-top: 10px;
+    .icons {
+        display: flex;
+        gap: 13px;
+        padding-top: 15px;
+        color: rgb(29, 155, 240);
+        cursor: pointer;
+    }
+}
+
+
+.inputeditor {
+    background-color: black;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+   
+    &:focus {
+        border: none;
+        outline: none;
+        color: white;
+    }
+   
+}
+.items {
+    
+    display: flex;
+    justify-content: space-between;
+
+    
+}
+.btn {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

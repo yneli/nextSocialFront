@@ -1,11 +1,34 @@
-import { Inter } from "@next/font/google";
 import style from "../styles/Home.module.scss";
-const inter = Inter({ subsets: ["latin"] })
+import Avatar from '@mui/material/Avatar';
+import { Loading } from "../components/Loading/Loading";
+import { BtnBlue } from "../components/BtnBlue/BtnBlue";
+import { Editor } from "../components/Editor/Editor";
+import { Rightbar } from "../components/Rightbar/Rightbar";
 
 export default function Home() {
-  return (
+  return (<>
     <div className={style.container}>
-      <h3>Home</h3>
+      <div className={style.header}>
+        <h3 className={style.title}>Home</h3>
+        <div className={style.userItems}>
+          <div className={style.editor}>
+          <div className={style.userAvata}>
+            <Avatar alt="Travis Howard" src="./assets/wave.jpg" />
+          </div>
+          <div className={style.whIdit}>
+          <Editor/>
+          </div>
+          </div>
+        </div>
+        <div className={style.btn}>
+          <BtnBlue>Tweet</BtnBlue>
+        </div>
+      </div>
+      <div className={style.content}>
+        <Loading/>
+      </div>
     </div>
+    <Rightbar/>
+    </>
   );
 };

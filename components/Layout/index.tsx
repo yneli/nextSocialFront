@@ -30,7 +30,6 @@ export const Layout = ({ children }: { children?: ReactNode, header?: ReactNode 
     <div className={style.container}>
       <Sidebar/>
       {children}
-      <Rightbar/>
       <ThemaSwitch/>
     </div>
     </Container>

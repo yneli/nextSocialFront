@@ -1,6 +1,6 @@
 .search{
     
-    margin-left: 5px;
+
      :focus {
         border: 1px solid rgb(255, 255, 255);
         outline: 0;
@@ -9,6 +9,7 @@
     display: flex;
 
     .inputsearch {
+        width: 100%;
         background-color: rgb(32, 35, 39);
         padding: 111px -5px 7px 40px;
         border-radius: 0px 33px 33px 0px;
@@ -23,7 +24,7 @@
     }
 }
 .active {
-    border: 1px solid rgb(29, 155, 240);
+    border: 2px solid rgb(29, 155, 240);
     border-radius: 33px;
 }
 
@@ -34,15 +35,13 @@
     min-height: 100px;
     position: absolute;
     top: 40px;
-    right: -40px;
+    right: 20px;
     border: 1px solid rgb(32, 35, 39);
     border-radius: 15px;
     .textitem {
         text-align: center;
         margin: 15px;
  
-
-
     }
 }
 .svg {
@@ -64,23 +63,22 @@
     position: absolute;
     padding: 3px;
     top: 40px;
-    right: -40px;
-    border: 1px solid rgb(32, 35, 39);
+    right: 20px;
+    border: 1px solid rgb(29, 155, 240);
     box-shadow:  rgb(32, 35, 39) 0px 3px 10px;
     border-radius: 15px;
     --border-size: 3px;
 
 background-image: conic-gradient(
-
   black,
   black ,
-
+  black
 ),
-conic-gradient(from var(--border-angle), transparent 90%, rgb(29, 155, 240));
+conic-gradient(from var(--border-angle), transparent 70%, rgb(29, 155, 240));
 background-size: calc(100% - (var(--border-size) * 3))
   calc(99% - (var(--border-size) * 3)),
 cover;
-background-position: bottom;
+background-position: center;
 background-repeat: no-repeat;
 animation: bg-spin 3s linear infinite;
 
@@ -98,6 +96,3 @@ syntax: "<angle>";
 inherits: true;
 initial-value: 0turn;
 }
-
-
-
